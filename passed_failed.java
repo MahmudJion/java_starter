@@ -1,8 +1,13 @@
-class Main {
+import java.util.Scanner;
+
+public class passed_failed {
 
     public static void main(String[] args) {
 
-        int mark = 56;
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Enter number:48");
+
+        int mark = reader.nextInt();
         if(mark >= 50)
         System.out.println("The student has passed.");
         else
