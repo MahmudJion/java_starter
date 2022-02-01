@@ -8,8 +8,6 @@ class Main {
     int first = reader.nextInt();
     int second = reader.nextInt();
 
-    System.out.println(first + " " + second);
-
     int sum = first + second;
     System.out.println("The sum is: " + sum);
   }
