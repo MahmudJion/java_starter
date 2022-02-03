@@ -4,11 +4,11 @@ public class MileKiloConterver{
 
     public static void main(String[] args){
         System.out.print("Enter distance in miles:");
-        Scanner s = new Scanner(System.in);
+        try (Scanner s = new Scanner(System.in)) {
+            double distanceInMiles = s.nextDouble();
 
-        double distanceInMiles = s.nextDouble();
-
-        System.out.println(distanceInMiles + " miles = " + milesTokm(distanceInMiles) + " km");
+            System.out.println(distanceInMiles + " miles = " + milesTokm(distanceInMiles) + " km");
+        }
 
         System.out.print("Enter distance in km:");
         double distanceInKm = s.nextDouble();
