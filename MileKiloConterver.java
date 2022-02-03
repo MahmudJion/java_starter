@@ -8,13 +8,13 @@ public class MileKiloConterver{
             double distanceInMiles = s.nextDouble();
 
             System.out.println(distanceInMiles + " miles = " + milesTokm(distanceInMiles) + " km");
+
+            System.out.print("Enter distance in km:");
+            double distanceInKm = s.nextDouble();
+
+            System.out.println(distanceInKm + " km = " + kmTomiles(distanceInKm) + " miles");
+            s.close();
         }
-
-        System.out.print("Enter distance in km:");
-        double distanceInKm = s.nextDouble();
-
-        System.out.println(distanceInKm + " km = " + kmTomiles(distanceInKm) + " miles");
-        s.close();
 
     }
 
