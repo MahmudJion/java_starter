@@ -190,6 +190,7 @@ public class BmiUi extends javax.swing.JFrame implements Observer {
     private javax.swing.JTextField txtResult;
     private javax.swing.JTextField txtWeightKg;
     // End of variables declaration//GEN-END:variables
+    private float ol;
 
     @Override
     public void update(Observable o, Object o1) {
