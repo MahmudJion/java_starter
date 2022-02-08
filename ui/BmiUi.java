@@ -135,13 +135,13 @@ public class BmiUi extends javax.swing.JFrame implements Observer {
     private void CalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalculateActionPerformed
         // TODO add your handling code here:
 //        BmiData bmid = new BmiData();
-//        
+//
 //        float weightKg, heightM, Bmi;
 //        bmid.setWeightKg(Float.parseFloat(txtWeightKg.getText()));
 //        bmid.setHeightM(Float.parseFloat(txtHeightM.getText()));
 //        bmid.setBmi(bmid.getWeightKg() / (bmid.getHeightM() * bmid.getHeightM()));
 //        txtResult.setText(String.valueOf(bmid.getBmi()));
-        
+
         bmid.setWeightAndHeight(txtWeightKg.getText(), txtHeightM.getText());
     }//GEN-LAST:event_CalculateActionPerformed
 
@@ -152,7 +152,7 @@ public class BmiUi extends javax.swing.JFrame implements Observer {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
