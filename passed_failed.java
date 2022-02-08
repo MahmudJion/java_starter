@@ -5,7 +5,7 @@ public class passed_failed {
     public static void main(String[] args) {
 
         try (Scanner reader = new Scanner(System.in)) {
-            System.out.println("Enter number:48");
+            System.out.println("Enter number:");
 
             int mark = reader.nextInt();
             if(mark >= 50)
