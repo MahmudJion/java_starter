@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class passed_failed {
+public class Result {
 
     public static void main(String[] args) {
 
