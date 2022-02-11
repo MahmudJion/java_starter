@@ -63,7 +63,7 @@ public class BmiData extends Observable {
     }
     
     public void calculateBmi(){
-        setBmi(getWeightKg() / getHeightM() * getHeightM());
+        setBmi(getWeightKg() / (getHeightM() * getHeightM()));
     }
     
     public void setWeightAndHeight(String weight, String height){
