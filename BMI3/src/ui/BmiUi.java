@@ -133,9 +133,8 @@ public class BmiUi extends javax.swing.JFrame implements Observer {
     }//GEN-LAST:event_txtHeightMActionPerformed
 
     private void CalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalculateActionPerformed
-        // TODO add your handling code here:
 //        BmiData bmid = new BmiData();
-//        
+
 //        float weightKg, heightM, Bmi;
 //        bmid.setWeightKg(Float.parseFloat(txtWeightKg.getText()));
 //        bmid.setHeightM(Float.parseFloat(txtHeightM.getText()));
