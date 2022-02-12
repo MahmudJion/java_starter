@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package milekiloconterver;
+package MileKiloConverter.src.milekiloconterver;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author lenovo
  */
-public class MileKiloConterver {
+public class MileKiloConverter {
 
     /**
      * @param args the command line arguments
@@ -30,7 +30,7 @@ public class MileKiloConterver {
             s.close();
         }
     }
-    
+
     private static double milesTokm(double distanceInMiles) {
         return distanceInMiles * 1.60934;
     }
@@ -38,5 +38,5 @@ public class MileKiloConterver {
     private static double kmTomiles(double distanceInKm) {
         return distanceInKm * 0.621371;
     }
-    
+
 }
