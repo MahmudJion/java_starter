@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ui;
+package BMI3.src.ui;
 
-import data.BmiData;
 import java.util.Observable;
 import java.util.Observer;
+
+import BMI3.data.BmiData;
 
 /**
  *
@@ -140,7 +141,7 @@ public class BmiUi extends javax.swing.JFrame implements Observer {
 //        bmid.setHeightM(Float.parseFloat(txtHeightM.getText()));
 //        bmid.setBmi(bmid.getWeightKg() / (bmid.getHeightM() * bmid.getHeightM()));
 //        txtResult.setText(String.valueOf(bmid.getBmi()));
-        
+
         bmid.setWeightAndHeight(txtWeightKg.getText(), txtHeightM.getText());
     }//GEN-LAST:event_CalculateActionPerformed
 
@@ -151,7 +152,7 @@ public class BmiUi extends javax.swing.JFrame implements Observer {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

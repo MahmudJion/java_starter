@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ui;
+package BMI3.ui;
 
-import data.BmiData;
 import java.util.Observable;
 import java.util.Observer;
+
+import BMI3.data.BmiData;
 
 /**
  *

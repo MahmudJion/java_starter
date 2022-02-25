@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package productinfo;
+package ProductInfo.src.productinfo;
 
 import java.util.Scanner;
 
@@ -32,5 +32,5 @@ public class ProductInfo {
             System.out.printf("Total cost: ¡ê%.2f %n", total);
         }
     }
-    
+
 }

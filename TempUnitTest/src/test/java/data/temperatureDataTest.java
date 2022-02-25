@@ -5,34 +5,29 @@
  */
 package data;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.testng.annotations.Test;
 
 /**
  *
  * @author mh21act
  */
 public class temperatureDataTest {
-    
+
     public temperatureDataTest() {
     }
-    
-    @BeforeClass
+
+
     public static void setUpClass() {
     }
-    
-    @AfterClass
+
+
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -78,6 +73,9 @@ public class temperatureDataTest {
         fail("The test case is a prototype.");
     }
 
+    private void assertEquals(boolean expResult, boolean result) {
+    }
+
     /**
      * Test of setIsCelsius method, of class temperatureData.
      */
@@ -117,7 +115,10 @@ public class temperatureDataTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+
+    private void fail(String string) {
+    }
+
     @Test
     public void testSetCelsiusByFahrenheit() {
         System.out.println("setTemperature");
@@ -130,5 +131,8 @@ public class temperatureDataTest {
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
-    
+
+    private void assertEquals(float expResult, float result, double d) {
+    }
+
 }

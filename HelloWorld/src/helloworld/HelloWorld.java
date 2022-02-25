@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package helloworld;
+package HelloWorld.src.helloworld;
 
 /**
  *
@@ -19,5 +19,5 @@ public class HelloWorld {
             System.out.println("Hello World");
         }
     }
-    
+
 }

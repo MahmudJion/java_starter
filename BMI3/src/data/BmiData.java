@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package data;
+package BMI3.src.data;
 
 import java.util.Observable;
 
@@ -61,11 +61,11 @@ public class BmiData extends Observable {
         setChanged();
         notifyObservers(this.Bmi);
     }
-    
+
     public void calculateBmi(){
         setBmi(getWeightKg() / (getHeightM() * getHeightM()));
     }
-    
+
     public void setWeightAndHeight(String weight, String height){
         weightKg = Float.parseFloat(weight);
         heightM = Float.parseFloat(height);

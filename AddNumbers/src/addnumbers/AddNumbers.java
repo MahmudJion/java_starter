@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package addnumbers;
+package AddNumbers.src.addnumbers;
 
 import java.util.Scanner;
 

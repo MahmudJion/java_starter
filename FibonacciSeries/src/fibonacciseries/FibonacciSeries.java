@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fibonacciseries;
+package FibonacciSeries.src.fibonacciseries;
 
 import java.util.Scanner;
 
@@ -36,5 +36,5 @@ public class FibonacciSeries {
             }
         }
     }
-    
+
 }

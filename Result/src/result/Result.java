@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package result;
+package Result.src.result;
 
 import java.util.Scanner;
 
@@ -27,5 +27,5 @@ public class Result {
             System.out.println("The student has failed.");
         }
     }
-    
+
 }
