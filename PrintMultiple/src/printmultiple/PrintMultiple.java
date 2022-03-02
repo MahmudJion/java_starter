@@ -9,6 +9,7 @@ package printmultiple;
  *
  * @author lenovo
  */
+//static Scanner console = new Scanner(System.in);
 public class PrintMultiple {
 
     /**
