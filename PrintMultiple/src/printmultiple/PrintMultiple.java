@@ -5,16 +5,20 @@
  */
 package printmultiple;
 
+import java.util.Scanner;
+
 /**
  *
  * @author lenovo
  */
-//static Scanner console = new Scanner(System.in);
 public class PrintMultiple {
 
     /**
      * @param args the command line arguments
      */
+    
+    static Scanner console = new Scanner(System.in);
+
     public static void main(String[] args) {
         // TODO code application logic here
         printMultiple("Hello", 5);
