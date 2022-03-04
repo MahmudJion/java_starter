@@ -5,29 +5,34 @@
  */
 package data;
 
+import static com.sun.xml.internal.ws.dump.LoggingDumpTube.Position.After;
+import static com.sun.xml.internal.ws.dump.LoggingDumpTube.Position.Before;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 
 /**
  *
  * @author mh21act
  */
 public class temperatureDataTest {
-
+    
     public temperatureDataTest() {
     }
-
-
+    
+    @BeforeClass
     public static void setUpClass() {
     }
-
-
+    
+    @AfterClass
     public static void tearDownClass() {
     }
-
+    
     @Before
     public void setUp() {
     }
-
+    
     @After
     public void tearDown() {
     }
@@ -41,7 +46,7 @@ public class temperatureDataTest {
         temperatureData instance = new temperatureData();
         float expResult = 0.0F;
         float result = instance.getTemperature();
-        assertEquals(expResult, result, 0.0);
+        assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
@@ -71,9 +76,6 @@ public class temperatureDataTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
-
-    private void assertEquals(boolean expResult, boolean result) {
     }
 
     /**
@@ -115,10 +117,7 @@ public class temperatureDataTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-
-    private void fail(String string) {
-    }
-
+    
     @Test
     public void testSetCelsiusByFahrenheit() {
         System.out.println("setTemperature");
@@ -127,12 +126,21 @@ public class temperatureDataTest {
         temperatureData instance = new temperatureData();
         instance.setTemperature(temperature);
         float result = instance.getTemperature();
-        assertEquals(expResult, result, 0.0);
+        assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
 
-    private void assertEquals(float expResult, float result, double d) {
+    private void assertEquals(boolean expResult, boolean result) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    private void fail(String the_test_case_is_a_prototype) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void assertEquals(float expResult, float result) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
 }
