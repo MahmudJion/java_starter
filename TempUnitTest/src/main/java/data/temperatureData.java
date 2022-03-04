@@ -5,12 +5,12 @@
  */
 package data;
 
+import java.text.ParseException;
 import java.util.Observable;
 
 /**
  *
  * @author Stiv
- * Seen by Mahmud Hasan
  */
 public class temperatureData extends Observable {
 
@@ -50,9 +50,15 @@ public class temperatureData extends Observable {
     public void setTempAndUnits(String temperatureStr, boolean isCelsius)
     {
         this.isCelsius = isCelsius;
-        this.temperature = Float.parseFloat(temperatureStr);
-        if (!isCelsius) temperature = (temperature-32)*5/9;
-        setAdvice(this.temperature);
+        try {
+            this.temperature = Float.parseFloat(temperatureStr);
+            if (!isCelsius) temperature = (temperature-32)*5/9;
+            setAdvice(this.temperature);
+
+        } catch(Exception e) {
+            this.advice = "you must input a valid number";
+        }
+        
         setChanged();
         this.notifyObservers(this.advice);
         
