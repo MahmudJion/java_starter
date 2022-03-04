@@ -5,67 +5,88 @@
  */
 package data;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author mh21act
+ * @author victorsteven
  */
 public class temperatureDataTest {
-
+    
     public temperatureDataTest() {
     }
 
-    @BeforeClass
+    @org.junit.jupiter.api.BeforeAll
+    public static void setUpClass() throws Exception {
+    }
+
+    @org.junit.jupiter.api.AfterAll
+    public static void tearDownClass() throws Exception {
+    }
+
+    @org.junit.jupiter.api.BeforeEach
+    public void setUp() throws Exception {
+    }
+
+    @org.junit.jupiter.api.AfterEach
+    public void tearDown() throws Exception {
+    }
+    
+    @BeforeAll
     public static void setUpClass() {
     }
-
-    @AfterClass
+    
+    @AfterAll
     public static void tearDownClass() {
     }
-
-    @Before
+    
+    @BeforeEach
     public void setUp() {
     }
-
-    @After
+    
+    /**
+     *
+     */
+    @AfterEach
     public void tearDown() {
     }
 
     /**
      * Test of getTemperature method, of class temperatureData.
      */
-    @Test
+    @org.junit.jupiter.api.Test
     public void testGetTemperature() {
         System.out.println("getTemperature");
         temperatureData instance = new temperatureData();
         float expResult = 0.0F;
         float result = instance.getTemperature();
-        assertEquals(expResult, result);
+        assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+//        fail("The test case is a prototype.");
     }
 
     /**
      * Test of setTemperature method, of class temperatureData.
      */
-    @Test
+    @org.junit.jupiter.api.Test
     public void testSetTemperature() {
         System.out.println("setTemperature");
         float temperature = 0.0F;
         temperatureData instance = new temperatureData();
         instance.setTemperature(temperature);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+//        fail("The test case is a prototype.");
     }
 
     /**
      * Test of isIsCelsius method, of class temperatureData.
      */
-    @Test
+    @org.junit.jupiter.api.Test
     public void testIsIsCelsius() {
         System.out.println("isIsCelsius");
         temperatureData instance = new temperatureData();
@@ -73,26 +94,26 @@ public class temperatureDataTest {
         boolean result = instance.isIsCelsius();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+//        fail("The test case is a prototype.");
     }
 
     /**
      * Test of setIsCelsius method, of class temperatureData.
      */
-    @Test
+    @org.junit.jupiter.api.Test
     public void testSetIsCelsius() {
         System.out.println("setIsCelsius");
         boolean isCelsius = false;
         temperatureData instance = new temperatureData();
         instance.setIsCelsius(isCelsius);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+//        fail("The test case is a prototype.");
     }
 
     /**
      * Test of setTempAndUnits method, of class temperatureData.
      */
-    @Test
+    @org.junit.jupiter.api.Test
     public void testSetTempAndUnits() {
         System.out.println("setTempAndUnits");
         String temperatureStr = "";
@@ -100,45 +121,20 @@ public class temperatureDataTest {
         temperatureData instance = new temperatureData();
         instance.setTempAndUnits(temperatureStr, isCelsius);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+//        fail("The test case is a prototype.");
     }
 
     /**
      * Test of setAdvice method, of class temperatureData.
      */
-    @Test
+    @org.junit.jupiter.api.Test
     public void testSetAdvice() {
         System.out.println("setAdvice");
         float temperature = 0.0F;
         temperatureData instance = new temperatureData();
         instance.setAdvice(temperature);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+//        fail("The test case is a prototype.");
     }
-
-    @Test
-    public void testSetCelsiusByFahrenheit() {
-        System.out.println("setTemperature");
-        float temperature = 37.0F;
-        float expResult = 37.0F;
-        temperatureData instance = new temperatureData();
-        instance.setTemperature(temperature);
-        float result = instance.getTemperature();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    private void assertEquals(boolean expResult, boolean result) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private void fail(String the_test_case_is_a_prototype) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private void assertEquals(float expResult, float result) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    
 }
