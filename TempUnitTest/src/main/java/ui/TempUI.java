@@ -9,7 +9,7 @@ import data.temperatureData;
 import java.util.Observable;
 import java.util.Observer;
 
-
+//seen by Abid 
 /**
  *
  * @author Stiv
