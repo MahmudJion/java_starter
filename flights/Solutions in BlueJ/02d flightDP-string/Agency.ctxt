@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=flight
+comment0.target=void\ addFlight(Flight)
+comment0.text=\ adds\ a\ flight\ to\ the\ flights\ at\ the\ agency\r\n\ @param\ flight\ is\ the\ flight\ to\ be\ added\r\n
+comment1.params=flt\ pp
+comment1.target=java.lang.String\ bookFlight(Flight,\ Passenger)
+comment1.text=\r\n\ Add\ a\ Passenger\ to\ a\ Flight\r\n\ @param\ pp\ the\ Passenger\ to\ be\ added\r\n\ @param\ flt\ the\ Flight\ to\ which\ the\ passenger\ is\ to\ be\ added\r\n
+comment2.params=flt\ pp
+comment2.target=boolean\ cancelBooking(Flight,\ Passenger)
+comment2.text=\r\n\ remove\ a\ Passenger\ from\ a\ Flight\r\n\ @param\ pp\ the\ Passenger\ to\ be\ added\r\n\ @param\ flt\ the\ Flight\ to\ which\ the\ passenger\ is\ to\ be\ added\r\n
+comment3.params=fl
+comment3.target=boolean\ isFlight(Flight)
+comment3.text=\ returns\ true\ if\ the\ flight\ is\ with\ the\ Agency,\ else\ false\r\n\ @param\ the\ flight\r\n\ @return\ true\ if\ the\ flight\ is\ with\ the\ Agency,\ else\ false\r\n
+comment4.params=
+comment4.target=java.lang.String\ listFlights()
+comment4.text=\ provides\ a\ String\ representation\ of\ all\ flights\ at\ the\ agency\r\n\ @return\ a\ String\ representation\ of\ all\ flights\ at\ the\ agency\r\n
+numComments=5
