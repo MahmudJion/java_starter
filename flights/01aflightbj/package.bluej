@@ -1,0 +1,18 @@
+#BlueJ package file
+objectbench.height=76
+objectbench.width=781
+package.editor.height=494
+package.editor.width=683
+package.editor.x=659
+package.editor.y=60
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+project.charset=windows-1252
+target1.height=62
+target1.name=flights
+target1.type=PackageTarget
+target1.width=80
+target1.x=250
+target1.y=110
