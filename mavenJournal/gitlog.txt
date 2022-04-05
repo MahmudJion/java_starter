@@ -1,0 +1,8 @@
+* 24d6a05 - (HEAD -> master, origin/master) Enable users to delete an existing entry (Tue Apr 5 12:10:35 2022) <mahmud hasan>
+* 21316e7 - (origin/dev) added direct navigation button (Sat Apr 25 16:26:26 2020) <stivb>
+* f76e0ca - edited the test (Sat Apr 25 16:22:11 2020) <stivb>
+* 14dbfa8 - edited the pom (Sat Apr 25 16:21:31 2020) <stivb>
+* 3f4b59c - added the tests (Sat Apr 25 16:18:47 2020) <stivb>
+* 2f4af34 - i changed the positions of the buttons (Fri Apr 24 19:05:52 2020) <stivb>
+* 8787b46 - added some labels (Fri Apr 24 17:01:37 2020) <stivb>
+* ae22d71 - first commit with the basic functionality of the journal (Fri Apr 24 16:47:45 2020) <stivb>
