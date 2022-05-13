@@ -1,5 +1,5 @@
 package universitysprotscentreapp.USC_Booking;
 
-public interface Montly_Report {
+public interface Monthly_Report {
 
 }

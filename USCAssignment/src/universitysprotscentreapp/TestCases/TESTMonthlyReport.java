@@ -2,12 +2,12 @@ package universitysprotscentreapp.TestCases;
 
 import org.junit.jupiter.api.Test;
 
-import universitysprotscentreapp.USC_Booking.Montly_Report;
+import universitysprotscentreapp.USC_Booking.Monthly_Report;
 
 class TESTMonthlyReport {
 
 	@Test
 	void testRatinglist() {
-		Montly_Report report =new  Monthly_Report();
+		new  Monthly_Report();
 	}
 }
