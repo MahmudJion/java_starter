@@ -1,18 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author hc18aau
- */
 public class TestList {
      public static void main(String[] args)
     {
         StockList stList = new StockList();
-        
+
         stList.addStockItem(stList.createNewStockItem("Pasta", 12, 100));
         stList.addStockItem(stList.createNewStockItem("Rice", 10, 50));
         stList.addStockItem(stList.createNewStockItem("Noodles", 22, 10));
