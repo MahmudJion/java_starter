@@ -1,10 +1,10 @@
-package TestCases;
+package universitysprotscentreapp.TestCases;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import USC_Booking.Student_Reviews;
+import universitysprotscentreapp.USC_Booking.Student_Reviews;
 
 class TESTReviewClass {
 

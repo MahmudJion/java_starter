@@ -1,15 +1,13 @@
-package TestCases;
-
-import static org.junit.jupiter.api.Assertions.*;
+package universitysprotscentreapp.TestCases;
 
 import org.junit.jupiter.api.Test;
 
-import USC_Booking.Montly_Report;
+import universitysprotscentreapp.USC_Booking.Montly_Report;
 
 class TESTMonthlyReport {
 
 	@Test
 	void testRatinglist() {
-		Montly_Report report =new  Montly_Report();
+		Montly_Report report =new  Monthly_Report();
 	}
 }

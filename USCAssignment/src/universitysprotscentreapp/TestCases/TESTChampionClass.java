@@ -1,10 +1,10 @@
-package TestCases;
+package universitysprotscentreapp.TestCases;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import USC_Booking.Monthly_Winner_Class;
+import universitysprotscentreapp.USC_Booking.Monthly_Winner_Class;
 
 class TESTChampionClass {
 
