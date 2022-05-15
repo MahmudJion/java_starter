@@ -18,23 +18,23 @@ import static org.junit.Assert.*;
  */
 public class ProcessMarks1Test {
     ProcessingMarks myUnit;
-    
+
     public ProcessMarks1Test() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
         myUnit = new ProcessingMarks();
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -47,22 +47,22 @@ public class ProcessMarks1Test {
         int mark = 35;
         int expected = 0;
         int actual = myUnit.processMark1(mark);
-        assertEquals(expected,actual);    
+        assertEquals(expected,actual);
     }
-    
+
     @Test
     public void markprocess1pass() {
         int mark = 55;
         int expected = 1;
         int actual = myUnit.processMark1(mark);
-        assertEquals(expected,actual);    
+        assertEquals(expected,actual);
     }
-    
+
     @Test
     public void markprocess1border() {
         int mark = 40;
         int expected = 1;
         int actual = myUnit.processMark1(mark);
-        assertEquals(expected,actual);    
+        assertEquals(expected,actual);
     }
 }

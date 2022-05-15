@@ -17,24 +17,24 @@ import static org.junit.Assert.*;
  * @author comqaam
  */
 public class ProcessMarks2Test {
-    
+
     ProcessingMarks myUnit;
     public ProcessMarks2Test() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
         myUnit = new ProcessingMarks();
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -46,22 +46,22 @@ public class ProcessMarks2Test {
     public void markprocess2fail() {
         int mark = 35;
         boolean actual = myUnit.processMark2(mark);
-        assertFalse(actual);    
+        assertFalse(actual);
     }
-    
+
     @Test
     public void markprocess2pass() {
         int mark = 55;
-        
+
         boolean actual = myUnit.processMark2(mark);
-        assertTrue(actual);    
+        assertTrue(actual);
     }
-    
+
     @Test
     public void markprocess2border() {
         int mark = 40;
-        
+
         boolean actual = myUnit.processMark2(mark);
-        assertTrue(actual);    
+        assertTrue(actual);
     }
 }
