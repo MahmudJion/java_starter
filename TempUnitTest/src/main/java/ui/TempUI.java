@@ -5,11 +5,12 @@
  */
 package ui;
 
-import data.temperatureData;
 import java.util.Observable;
 import java.util.Observer;
 
-//seen by Abid 
+import data.temperatureData;
+
+//seen by Abid
 /**
  *
  * @author Stiv
@@ -19,9 +20,9 @@ public class TempUI extends javax.swing.JFrame implements Observer {
     /**
      * Creates new form TempUI
      */
-    
+
     temperatureData td = new temperatureData();
-    
+
     public TempUI() {
         initComponents();
         buttonGroup1.add(rbtnCelsius);
@@ -107,28 +108,7 @@ public class TempUI extends javax.swing.JFrame implements Observer {
     private void btnCalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculateActionPerformed
 
         td.setTempAndUnits(txtTemperature.getText(), rbtnCelsius.isSelected());
-        /*
-        float temperature;
-        temperature = Float.parseFloat(txtTemperature.getText());
-        
-        if (rbtnFahrenheit.isSelected())
-        {
-            temperature = (temperature-32)*5/9;
-        }
-        
-        
-        if (temperature>=38)
-        {
-            txtFeedback.setText("You need to go to the doctor");
-        }
-        else
-        {
-            txtFeedback.setText("You are ok");
-        }
-        */
 
-
-        // TODO add your handling code here:
     }//GEN-LAST:event_btnCalculateActionPerformed
 
     /**
@@ -138,7 +118,7 @@ public class TempUI extends javax.swing.JFrame implements Observer {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -180,6 +160,6 @@ public class TempUI extends javax.swing.JFrame implements Observer {
     public void update(Observable o, Object arg) {
          String advice = (String) arg;
          txtFeedback.setText(advice);
-        
+
          }
 }
