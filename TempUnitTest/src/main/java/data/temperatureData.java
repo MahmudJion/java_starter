@@ -5,7 +5,6 @@
  */
 package data;
 
-import java.text.ParseException;
 import java.util.Observable;
 
 /**
@@ -17,7 +16,7 @@ public class temperatureData extends Observable {
     /**
      * @return the advice
      */
-    
+
 
     /**
      * @return the temperature
@@ -58,24 +57,24 @@ public class temperatureData extends Observable {
         } catch(Exception e) {
             this.advice = "you must input a valid number";
         }
-        
+
         setChanged();
         this.notifyObservers(this.advice);
-        
+
     }
-    
+
     public void setAdvice(float temperature)
     {
         if (temperature<36)  advice="a little low";
         else if (temperature <38) advice = "fine";
         else advice="a little high, maybe see a doctor";
     }
-    
-    
+
+
 
  private float temperature;
  private boolean isCelsius;
  private String advice;
- 
-    
+
+
 }
