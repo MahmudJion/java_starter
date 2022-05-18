@@ -5,7 +5,6 @@
  */
 package data;
 
-import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Observable;
 
@@ -14,12 +13,12 @@ import java.util.Observable;
  * @author Stiv
  */
 public class TemperatureReadings extends Observable {
-    
+
     private ArrayList<temperatureData> temperatures = new ArrayList<temperatureData>();
-    
+
     public void addReading(temperatureData td)
     {
-        if (size()>0 && td.equals(getLast())) 
+        if (size()>0 && td.equals(getLast()))
         {
             return;
         }
@@ -28,25 +27,25 @@ public class TemperatureReadings extends Observable {
         setChanged();
         notifyObservers(toString());
     }
-    
+
     public int size()
     {
         return temperatures.size();
     }
-    
+
     public temperatureData getFirst()
     {
         return temperatures.get(0);
     }
-    
+
     public  temperatureData getLast()
     {
         if (temperatures.size()==0) return null;
         return temperatures.get(temperatures.size()-1);
     }
-    
-    
-    
+
+
+
     public String toString()
     {
         String allTemperatures="";
@@ -57,5 +56,5 @@ public class TemperatureReadings extends Observable {
         }
         return allTemperatures;
     }
-    
+
 }

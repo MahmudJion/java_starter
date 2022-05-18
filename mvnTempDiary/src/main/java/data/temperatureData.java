@@ -62,7 +62,7 @@ public class temperatureData extends Observable {
     public void setIsCelsius(boolean isCelsius) {
         this.isCelsius = isCelsius;
     }
-    
+
     public String toString()
     {
         String timeString, dateString;
@@ -76,7 +76,7 @@ public class temperatureData extends Observable {
     {
         this.setDt(LocalDateTime.now());
         this.isCelsius = isCelsius;
-        try 
+        try
         {
         float newTemperature = Float.parseFloat(temperatureStr);
         if (newTemperature<0) return;
@@ -88,40 +88,40 @@ public class temperatureData extends Observable {
         {
           this.advice="You must put in a proper number";
         }
-        
+
         setChanged();
         this.notifyObservers(this.advice);
         //System.out.println(toString());
     }
-    
+
     public boolean equals(temperatureData oTd)
     {
         if (this.temperature ==oTd.temperature &&
                 withinXSeconds(10,this,oTd)) return true;
         return false;
     }
-    
+
     public void setAdvice(float temperature)
     {
         if (temperature<36)  advice="a little low";
         else if (temperature <38) advice = "fine";
         else advice="a little high, maybe see a doctor";
     }
-    
-    
-    
+
+
+
     private boolean withinXSeconds(int nSeconds, temperatureData td1, temperatureData td2)
     {
         if (ChronoUnit.SECONDS.between(td1.getDt(), td2.getDt())<nSeconds) return true;
         return false;
     }
-    
-    
+
+
 
  private float temperature;
  private boolean isCelsius;
  private String advice;
  private LocalDateTime dt;
- 
-    
+
+
 }
