@@ -21,17 +21,17 @@ public class TempUI extends javax.swing.JFrame implements Observer {
     /**
      * Creates new form TempUI
      */
-    
+
     temperatureData td;
     TemperatureReadings tr = new TemperatureReadings();
-    
+
     public TempUI() {
         initComponents();
         buttonGroup1.add(rbtnCelsius);
         buttonGroup1.add(rbtnFahrenheit);
         rbtnCelsius.setSelected(true);
         tr.addObserver(this);
-        
+
     }
 
     /**
@@ -140,7 +140,7 @@ public class TempUI extends javax.swing.JFrame implements Observer {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -193,6 +193,6 @@ public class TempUI extends javax.swing.JFrame implements Observer {
          String advice = (String) arg;
          txtFeedback.setText(advice);
          }
-         
+
          }
 }
