@@ -13,9 +13,9 @@ import java.util.Observable;
  * @author Stiv
  */
 public class TemperatureReadings extends Observable {
-    
+
     private ArrayList<temperatureData> temperatures = new ArrayList<temperatureData>();
-    
+
     public void addReading(temperatureData td)
     {
         temperatures.add(td);
@@ -23,12 +23,12 @@ public class TemperatureReadings extends Observable {
         setChanged();
         notifyObservers(toString());
     }
-    
+
     public int size()
     {
         return temperatures.size();
     }
-    
+
     public String toString()
     {
         String allTemperatures="";
@@ -39,5 +39,5 @@ public class TemperatureReadings extends Observable {
         }
         return allTemperatures;
     }
-    
+
 }
