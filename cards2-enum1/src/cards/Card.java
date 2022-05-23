@@ -1,14 +1,8 @@
 package cards;
 
 import java.util.*;
-/**
- * Write a description of class Card here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Card
-{   
+{
     // Why can't we use enums here ?
     public static final int JACK = 11;
     public static final int QUEEN = 12;
@@ -19,15 +13,15 @@ public class Card
 
 
     public Card(Suit s, int fv) //Note s is NOT int!!
-    {  
-        cardSuit = s; 
+    {
+        cardSuit = s;
         faceValue = fv;
     }
- 
+
 
     //uses the toString() method in Suit
-    public String getSuit() 
-    {  
+    public String getSuit()
+    {
         return cardSuit.toString();
     }
 
