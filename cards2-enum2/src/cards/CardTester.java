@@ -1,17 +1,12 @@
 package cards;
 
 
-/**
- * Write a description of class CardTester here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class CardTester
-{   
+{
     public void play()
     {
-        //There will be problems here
+      //There will be problems here
       Card myCard1 = new Card(Card.CLUB, 6);
       Card myCard2 = new Card(Card.SPADE, Card.JACK);
       System.out.println("Card1 : " + myCard1.showSuit());
@@ -24,19 +19,6 @@ public class CardTester
       //Use of statics means you lose the "String" representation
       // What is output here ?
       System.out.println("My suit is " + Card.CLUB);
-      
-      /** this causes a syntax error - can't compare String and int
-       * replacing myString.equals(Card.CLUB) compiles but results in "No"
-      String myString = "Club";
-      if (myString==Card.CLUB)
-      {
-        System.out.println("Yes");
-      }
-      else
-      {
-        System.out.println("No");
-      }
-      */
-     
+
     }
-}   
+}
