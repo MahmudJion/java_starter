@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package data;
 
 import java.util.Observable;
@@ -28,22 +23,22 @@ public class journeyCoster extends Observable {
         this.totalCost = totalCost;
         setChanged();
         notifyObservers(this.totalCost);
-        
+
     }
-    
+
     public void setJourneyValues(String mpg, String pricePerLitre, String miles)
     {
         this.setMiles(Float.parseFloat(miles));
         this.setPricePerLitre(Float.parseFloat(pricePerLitre));
         this.setMpg(Float.parseFloat(mpg));
         getJourneyCost();
-        
+
     }
-    
+
     /**
      * @return the mpg
      */
-    
+
      float g2l = (float) 4.54609;
     public float getMpg() {
         return mpg;
@@ -86,11 +81,11 @@ public class journeyCoster extends Observable {
         this.pricePerLitre = pricePerLitre;
         getJourneyCost();
     }
-    
-    
+
+
     private boolean getJourneyCost()
     {
-        try 
+        try
         {
         float milesPerLitre =  mpg/g2l;
         float petrolNeeded = miles/milesPerLitre;
@@ -102,14 +97,14 @@ public class journeyCoster extends Observable {
             return false;
         }
 
-                
+
     }
-    
+
     private float mpg;
     private float miles;
     private float pricePerLitre;
-    
+
     private float totalCost;
-    
-    
+
+
 }
