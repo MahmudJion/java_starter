@@ -1,17 +1,10 @@
 package library;
 import java.util.*;
-/**
- * Class Library explores approaches to error handling.
- * 
- * @author Mick Wood, amended A.Marczyk 
- * @version 2 - Defensive Programming with Error Codes
- * Based on Library 1b
- */
 public class Library
 {
     private ArrayList<Member> members = new ArrayList<Member>();
     private ArrayList<Book> books = new ArrayList<Book> ();
-    
+
     public void addMember (Member member) {members.add (member);}
     public void addBook (Book book) {books.add (book);}
 
@@ -25,16 +18,16 @@ public class Library
     public void lendBook (Member m,Book b)
     {
         if (b.isAvailable() && isMember(m) && isBook(b) && !m.hasFines())
-        {            
+        {
             m.borrowBook (b);
             b.setUnavailable();
         }
-        else 
+        else
         {
             // do nothing
-        }            
+        }
     }
-    
+
     /** return book
      * PRECONDITION: isOnLoan(Member m, Book b)
      */
@@ -48,17 +41,17 @@ public class Library
     {
         return m.hasBook(b);
     }
-    
+
     public boolean isMember(Member m)
     {
         return members.contains(m);
     }
-    
+
     public boolean isBook(Book b)
     {
         return books.contains(b);
     }
-    
+
     public String listAvailableBooks()
     {
         String s = "";
@@ -71,7 +64,7 @@ public class Library
         }
         return s;
     }
-    
+
     public String listMembers()
     {
         String s = "";
@@ -79,9 +72,9 @@ public class Library
         {
             s = s + temp.getName()+ "\n";
         }
-        return s; 
+        return s;
     }
-    
+
     public String listAllBooks()
     {
         String s = "";
@@ -89,6 +82,6 @@ public class Library
         {
             s = s + temp.getTitle()+ "\n";
         }
-        return s; 
+        return s;
     }
 }
