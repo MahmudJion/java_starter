@@ -1,7 +1,4 @@
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.event.*;
 
 /**
  * This demonstrates the model-view-controller design pattern.
@@ -16,10 +13,10 @@ public class DemoMVC {
 		DemoModel model = new DemoModel();
 		DemoView view = new DemoView(model);
 		DemoController controller = new DemoController(model, view);
-		
+
 		// register controller as the listener
 		view.registerListener(controller);
-		
+
 		// start it up
 		view.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		view.setSize(400, 300);
