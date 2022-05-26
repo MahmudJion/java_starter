@@ -1,25 +1,20 @@
 package library;
 import java.util.*;
-/**
- * Class Library explores approaches to error handling.
- * 
- * @author Mick Wood amended by Olenka Marczyk
- * @version 2 - Defensive Programming with Error Codes
- */
+
 public class Library
 {
     private List<Member> members = new ArrayList<Member>();
     private List<Book> books = new ArrayList<Book>();
-    
+
     public void addMember (Member member) {members.add (member);}
     public void addBook (Book book) {books.add (book);}
 
     /**
      * Loan a Book to a Member
-     * Error codes used 
+     * Error codes used
      * @param b the Book to be loaned
      * @param m the Member to loan the Book
-     * 
+     *
      * @return true if book was loaned successfully, false otherwise
      */
     public String lendBook ( Member m, Book b)
@@ -28,14 +23,14 @@ public class Library
         else if (!b.isAvailable()) {return b.getTitle() + " - not available "  ;}
         else if (!isBook(b)) {return b.getTitle() + " - not a book";}
         else if (!noFines(m)) {return m.getName() + " - has fines";}
-        else 
-        {            
+        else
+        {
             b.setUnavailable();
             m.borrowBook (b);
             return b.getTitle() + " loaned to " + m.getName();
-        }           
+        }
     }
-        
+
     /** return book
      * PRECONDITION: isOnLoan(Member m, Book b)
      */
@@ -49,22 +44,22 @@ public class Library
     {
         return m.hasBook(b);
     }
-    
+
     public boolean isMember(Member m)
     {
         return members.contains(m);
     }
-    
+
     public boolean isBook(Book b)
     {
         return books.contains(b);
     }
-    
+
     public boolean noFines(Member m)
     {
         return !m.unpaidFines();
     }
-    
+
     public String listAvailableBooks()
     {
         String s = "";
@@ -77,7 +72,7 @@ public class Library
         }
         return s;
     }
-    
+
     public String listMembers()
     {
         String s = "";
@@ -85,9 +80,9 @@ public class Library
         {
             s = s + temp.getName()+ "\n";
         }
-        return s; 
+        return s;
     }
-    
+
     public String listAllBooks()
     {
         String s = "";
@@ -95,6 +90,6 @@ public class Library
         {
             s = s + temp.getTitle()+ "\n";
         }
-        return s; 
+        return s;
     }
 }
