@@ -1,36 +1,27 @@
 import java.awt.*;
 
-/**
- * The DemoModel class holds the information that is used by the GUI.
- * Ask yourself the question, what data would be needed to recreate
- * the state of the GUI?  This data is what should be stored in the
- * model.
- * <p>
- * The instance variables are from Fig. 14.34.
- * @author Tom Bylander
- */
 public class DemoModel {
-    /** 
-     * The number of points 
+    /**
+     * The number of points
      */
 	private int pointCount;
 
-	/** 
-	 * An array of 10000 java.awt.Point references 
+	/**
+	 * An array of 10000 java.awt.Point references
 	 */
 	private Point[] points;
-	
-	/** 
-	 * The color selected by the user 
+
+	/**
+	 * The color selected by the user
 	 */
 	private Color selectedColor;
-	
+
 	public DemoModel() {
 		pointCount = 0;
 		points = new Point[10000];
 		selectedColor = Color.CYAN;
 	}
-	
+
 	/**
 	 * Add a Point to the points array.
 	 * @param point the Point to be added to points.
@@ -40,7 +31,7 @@ public class DemoModel {
 		points[pointCount] = point;
 		pointCount++;
 	}
-	
+
 	/**
 	 * Returns point at index i.
 	 * Returns null if no such point exists.
@@ -54,7 +45,7 @@ public class DemoModel {
 		}
 		return null;
 	}
-	
+
 	/**
 	 * Store the color that the user selected.
 	 * @param color the color selected by the user
@@ -62,7 +53,7 @@ public class DemoModel {
 	public void setSelectedColor(Color color) {
 		selectedColor = color;
 	}
-	
+
 	/**
 	 * @return the color selected by the user
 	 */
