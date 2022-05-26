@@ -1,7 +1,5 @@
 import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.event.*;
 
 /** .
  * The view is responsible for displaying the information.
@@ -11,39 +9,39 @@ import javax.swing.event.*;
  * @author Tom Bylander
  */
 public class DemoView extends JFrame {
-    /** 
-     * the model of this MVC example 
+    /**
+     * the model of this MVC example
      */
 	private DemoModel model;
-	
-	/** 
+
+	/**
 	 * the JPanel where the user can paint
 	 */
 	private PaintPanel mousePanel;
-	
-	/** 
+
+	/**
 	 * for displaying a list of colors
 	 */
 	private JList colorList;
-	
-	/** 
-	 * the panel where the JList will be placed 
+
+	/**
+	 * the panel where the JList will be placed
 	 */
 	private JPanel listPanel;
 
-	/** 
-	 * the String names of the colors that the user can select 
+	/**
+	 * the String names of the colors that the user can select
 	 */
 	private static final String[] colorNames = {"Black", "Blue", "Cyan",
 		"Dark Gray", "Gray", "Green", "Light Gray", "Magenta",
 		"Orange", "Pink", "Red", "White", "Yellow"};
-	
-	/** 
-	 * the Colors that the user can select 
+
+	/**
+	 * the Colors that the user can select
 	 */
 	private static final Color[] colors = {Color.BLACK, Color.BLUE,
-		Color.CYAN, Color.DARK_GRAY, Color.GRAY, Color.GREEN, 
-		Color.LIGHT_GRAY, Color.MAGENTA, Color.ORANGE, Color.PINK, 
+		Color.CYAN, Color.DARK_GRAY, Color.GRAY, Color.GREEN,
+		Color.LIGHT_GRAY, Color.MAGENTA, Color.ORANGE, Color.PINK,
 		Color.RED, Color.WHITE, Color.YELLOW};
 
 	/**
