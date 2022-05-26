@@ -2,19 +2,14 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.event.*;
 
-/**
- * This demonstrates the controller in a model-view-controller pattern.
- * Adapted from Figures 14.23 and 14.34.
- * @author Tom Bylander
- */
 public class DemoController implements ListSelectionListener, MouseMotionListener {
-    /** 
-     * The model of this MVC example 
+    /**
+     * The model of this MVC example
      */
 	private DemoModel model;
-	
-	/** 
-	 * The view of this MVC example 
+
+	/**
+	 * The view of this MVC example
 	 */
 	private DemoView view;
 
@@ -42,7 +37,7 @@ public class DemoController implements ListSelectionListener, MouseMotionListene
 	}
 
 	/**
-	 * Update the model when the user selects a color, and repaint the 
+	 * Update the model when the user selects a color, and repaint the
 	 * window.
 	 */
 	public void valueChanged(ListSelectionEvent event) {
