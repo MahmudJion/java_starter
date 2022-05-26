@@ -9,8 +9,8 @@ import javax.swing.JPanel;
  * @author Tom Bylander
  */
 public class PaintPanel extends JPanel {
-    /** 
-     * The model of this MVC example (it stores the points) 
+    /**
+     * The model of this MVC example (it stores the points)
      */
 	private DemoModel model;
 
