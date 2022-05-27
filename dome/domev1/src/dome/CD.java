@@ -1,12 +1,5 @@
 package dome;
 
-/**
- * The CD class represents a CD object. Information about the 
- * CD is stored and can be retrieved.
- * 
- * @author Michael Kolling and David J. Barnes
- * @amended by A.A.Marczyk 2017.10.18
- */
 public class CD
 {
     private String title;
@@ -67,15 +60,15 @@ public class CD
         return gotIt;
     }
 
-    /** 
+    /**
      * @return the artist
      */
     public String getArtist()
     {
         return artist;
     }
-    
-    /** 
+
+    /**
      * sets a new artist
      * @dir the new artist
      */
@@ -83,16 +76,16 @@ public class CD
     {
         artist = dir;
     }
-    
-    /** 
+
+    /**
      * @return the number of tracks
      */
     public int getTracks()
     {
         return numberOfTracks;
     }
-    
-    /** 
+
+    /**
      * sets number of tracks
      * @trks number of tracks
      */
@@ -100,19 +93,19 @@ public class CD
     {
         numberOfTracks = trks;
     }
-    
-    
+
+
     /**
      * Print details about this CD to the text terminal.
      */
     public void print()
     {
         System.out.print("CD: " + title + " (" + playingTime + " mins)");
-        if(gotIt) 
+        if(gotIt)
         {
             System.out.println("*");
         }
-        else 
+        else
         {
             System.out.println();
         }
@@ -120,5 +113,5 @@ public class CD
         System.out.println("    tracks: " + numberOfTracks);
         System.out.println("    " + comment);
     }
-    
+
 }
