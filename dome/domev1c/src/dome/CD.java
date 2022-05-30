@@ -1,12 +1,5 @@
 package dome;
 
-/**
- * The CD class represents a CD object. Information about the 
- * CD is stored and can be retrieved.
- * 
- * @author Michael Kolling and David J. Barnes
- * @version amended A.A.Marczyk 2017.10.18
- */
 public class CD extends Item
 {
     private String artist;
@@ -41,8 +34,8 @@ public class CD extends Item
     {
         return numberOfTracks;
     }
-    
-    /** 
+
+    /**
      * sets a new artist
      * @dir the new artist
      */
@@ -50,9 +43,9 @@ public class CD extends Item
     {
         artist = dir;
     }
-    
-    
-    /** 
+
+
+    /**
      * sets number of tracks
      * @trks number of tracks
      */
@@ -60,24 +53,24 @@ public class CD extends Item
     {
         numberOfTracks = trks;
     }
- 
-/**Needs to be commented out as it won't compile otherwise**/    
+
+/**Needs to be commented out as it won't compile otherwise**/
     /**
      * Print details about this CD to the text terminal.
      */
     public void print()
     {
-//         System.out.print("CD: " + title + " (" + playingTime + " mins)");
-//         if(gotIt) 
-//         {
-//             System.out.println("*");
-//         }
-//         else 
-//         {
-//             System.out.println();
-//         }
+        System.out.print("CD: " + title + " (" + playingTime + " mins)");
+        if(gotIt)
+        {
+            System.out.println("*");
+        }
+        else
+        {
+            System.out.println();
+        }
          System.out.println("    " + artist);
          System.out.println("    tracks: " + numberOfTracks);
-//         System.out.println("    " + comment);
+         System.out.println("    " + comment);
      }
 }
