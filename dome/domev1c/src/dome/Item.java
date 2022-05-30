@@ -1,17 +1,8 @@
 package dome;
 
-/**
- * The Item class represents a multi-media item.
- * Information about the item is stored and can be retrieved.
- * This class serves as a superclass for more specific itms.
- * 
- * @author Michael Kolling and David J. Barnes
- * @version amended A.A.Marczyk 2017.10.18
- */
 public class Item
 {
     private String title;
-    private int playingTime;
     private boolean gotIt;
     private String comment;
 
@@ -23,7 +14,6 @@ public class Item
     public Item(String theTitle, int time)
     {
         title = theTitle;
-        playingTime = time;
         gotIt = false;
         comment = "";
     }
@@ -61,9 +51,9 @@ public class Item
     {
         return gotIt;
     }
-    
+
     /** additional method
-     * @return title 
+     * @return title
      */
     public String getTitle()
     {
