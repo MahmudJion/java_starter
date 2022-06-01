@@ -1,10 +1,5 @@
 package dome;
-/**
- * Simple student with a name and id number. Student also has credits band fees to pay
- * 
- * @author A.A.Marczyk
- * @version 18/11/2004 version 1
- */
+
 public class Student
 {
     private String name;
@@ -12,7 +7,7 @@ public class Student
     private int credits;
     private double fees;
     private double feesPaid;
-   
+
     public Student(String n, int id)
     {
        name = n;
@@ -21,48 +16,48 @@ public class Student
        fees = 0;
        feesPaid = 0;
     }
-   
+
 	public int getStudentNo()
 	{
 	    return idNo;
 	}
-	
+
 	public void addCredits(int c)
 	{
 	   credits = credits + c;
 	}
-	
+
 	public int getCredits()
 	{
 	    return credits;
 	}
-	
+
 	public void setFees(double f)
 	{
 	    fees = f;
 	}
-	
+
 	public void payFees(double p)
 	{
 	    feesPaid = feesPaid + p;
 	}
-	
+
 	public boolean hasPaid()
 	{
 	    return fees == feesPaid;
 	}
-	
+
 	public double getFeesOutstanding()
 	{
 	    return fees - feesPaid;
 	}
-	
+
 	public String getAsString()
 	{
 	    String s = "Student Name: " + name + "   Student No: " + idNo + "\nCredits :" + credits;
 	    s = s + "\nFees: �" + fees + "  Fees paid: �" + feesPaid;
 	    return s;
 	}
-	
-	
+
+
 }
