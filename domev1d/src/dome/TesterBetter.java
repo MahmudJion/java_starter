@@ -1,22 +1,17 @@
 package dome;
-/**
- * Write a description of class Tester here.
- * 
- * @author A.A.Marczyk 
- * @version 2017.10.18
- */
+
 public class TesterBetter
 {
     public static void main(String args[]){
-        
+
         Database db = new Database();
-        
+
         CD cd1 = new CD("Funky Music", "Joe Bloggs", 10, 80);
         CD cd2 = new CD("Boring Music", "Fred Bloggs", 7, 80);
-                
+
         DVD dvd1 = new DVD("Psycho","Hitchcock",160);
         DVD dvd2 = new DVD("Bambi","Disney",100);
-        
+
 	    Item it1 = new Item("XXX",100);
 	    Item it2 = new Item("YYY",200);
         Item icd3 = new CD("Metallica", "Metallica", 8, 100);
@@ -37,7 +32,7 @@ public class TesterBetter
         db.addComment(dvd2,"Sweet");
         db.addComment(icd3,"Loud");
         db.addComment(idvd3,"Watch it !");
-        
+
         db.setAllOwn();
         db.list();
     }
