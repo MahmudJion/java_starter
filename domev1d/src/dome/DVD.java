@@ -1,13 +1,6 @@
 package dome;
-/**
- * The DVD class represents a DVD object. Information about the 
- * DVD is stored and can be retrieved. We assume that we only deal 
- * with movie DVDs at this stage.
- * 
- * @author Michael Kolling and David J. Barnes
- * @version 2006.03.30
- */
-public class DVD extends Item 
+
+public class DVD extends Item
 {
     private String director;
 
@@ -30,8 +23,8 @@ public class DVD extends Item
     {
         return director;
     }
-    
-    /** 
+
+    /**
      * sets a new director
      * @dir the new director
      */
@@ -48,9 +41,9 @@ public class DVD extends Item
         super.print();  // call to parent print()
         System.out.println("    " + director);
     }
-    
-//     public String toString()
-//     {
-//         return super.toString() + "      " + director + "\n";
-//     }
+
+    public String toString()
+    {
+        return super.toString() + "      " + director + "\n";
+    }
 }
