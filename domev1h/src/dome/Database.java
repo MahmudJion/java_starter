@@ -2,17 +2,6 @@ package dome;
 
 import java.util.ArrayList;
 
-/**
- * The database class provides a facility to store CD and video 
- * objects. A list of all CDs and videos can be printed to the
- * terminal.
- * 
- * This version does not save the data to disk, and it does not
- * provide any search functions.
- * 
- * @author Michael Kolling and David J. Barnes
- * @amended A.A.Marczyk 2017.10.18
- */
 public class Database
 {
     private ArrayList<CD> cds;
@@ -52,14 +41,14 @@ public class Database
     public void list()
     {
         // print list of CDs
-        for(CD cd : cds) 
+        for(CD cd : cds)
         {
             cd.print();
             System.out.println();   // empty line between items
         }
 
         // print list of DVDs
-        for(DVD dvd : dvds) 
+        for(DVD dvd : dvds)
         {
             dvd.print();
             System.out.println();   // empty line between items
