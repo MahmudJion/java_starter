@@ -1,10 +1,5 @@
 package dome;
-/**
- * Write a description of class TestPoly3 here.
- * Testing polymorphism & casting
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class TestPoly3
 {
     public static void main(String[] args)
@@ -16,18 +11,18 @@ public class TestPoly3
         //Polymorphic creation
         Item pv2, pc2;
         pv2 = new DVD("BFG","Disney",100);
-        pc2 = new CD("The Wall","Pink Floyd",8,70); 
-      
+        pc2 = new CD("The Wall","Pink Floyd",8,70);
+
         // run time system uses dynamic type
         System.out.println("***What gets printed***");
         System.out.println("***pv2 - static:Item, dynamic:DVD***");
-        pv2.print(); 
+        pv2.print();
         System.out.println("***pv2 re-assigned a CD pc2 ***");
         pv2 = pc2; //polymorphic assignment
-        pv2.print(); 
+        pv2.print();
         System.out.println("***pv2 re-assigned a DVD***");
         pv2 = v;
-        pv2.print(); 
+        pv2.print();
 
 // Additional tests - casting
         String s;
@@ -37,23 +32,23 @@ public class TestPoly3
 // compiler uses static type
         pv3.setOwn(true);
         pc3.setOwn(true);
-        
-// Why do these not compile ???        
-         s = pc3.getArtist();  
-         s = pv3.getDirector();
-         s = pv3.getArtist();
-/        s = pc3.getDirector();
 
-// Compiles BUT what about runtime ?????        
-//        s = ((CD)pc3).getArtist();          
-//        n = ((CD)pc3).getNumberOfTracks();  
-//        s = ((DVD)pc3).getDirector();       
-        
-//        s = ((DVD)pv3).getDirector();       
-//        s = ((CD)pv3).getArtist();          
-//        n = ((CD)pv3).getNumberOfTracks();  
+// Why do these not compile ???
+        s = pc3.getArtist();
+        s = pv3.getDirector();
+        s = pv3.getArtist();
+        s = pc3.getDirector();
 
-         
-                
+// Compiles BUT what about runtime ?????
+        s = ((CD)pc3).getArtist();
+        n = ((CD)pc3).getNumberOfTracks();
+        s = ((DVD)pc3).getDirector();
+
+        s = ((DVD)pv3).getDirector();
+        s = ((CD)pv3).getArtist();
+        n = ((CD)pv3).getNumberOfTracks();
+
+
+
     }
 }
