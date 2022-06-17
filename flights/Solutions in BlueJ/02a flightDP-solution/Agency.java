@@ -1,9 +1,4 @@
 import java.util.*;
-/**
- * Class Agency explores approaches to error handling.
- * @author  
- * @version 1 - Error Avoidance(Programming by Contract)
- */
 public class Agency
 {
     private ArrayList<Flight> flights = new ArrayList<Flight>();
@@ -11,11 +6,11 @@ public class Agency
     /** adds a flight to the flights at the agency
      * @param flight is the flight to be added
      */
-    public void addFlight (Flight flight) 
+    public void addFlight (Flight flight)
     {
         flights.add (flight);
     }
-    
+
     /**
      * Add a Passenger to a Flight
      * @param pp the Passenger to be added
@@ -28,8 +23,8 @@ public class Agency
             flt.addPassenger(pp);
         }
     }
-    
-    
+
+
     /**
      * remove a Passenger from a Flight
      * @param pp the Passenger to be added
@@ -42,19 +37,19 @@ public class Agency
             flt.removePassenger (pp);
         }
     }
-    
-    
-    
+
+
+
     /** returns true if the flight is with the Agency, else false
      * @param the flight
      * @return true if the flight is with the Agency, else false
-     */    
+     */
     public boolean isFlight(Flight fl)
     {
         return flights.contains(fl);
     }
-     
-    
+
+
     /** provides a String representation of all flights at the agency
      * @return a String representation of all flights at the agency
      */
@@ -65,8 +60,8 @@ public class Agency
         {
             s = s + temp.toString()+ "\n";
         }
-        return s; 
+        return s;
     }
-    
-     
+
+
 }
