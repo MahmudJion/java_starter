@@ -7,41 +7,41 @@ public class Flight
     private int capacity;
 
     private ArrayList<Passenger> passengers = new ArrayList<Passenger>();
-    
-    
-    
-    public Flight (String code, String destination, int cap) 
-    { 
+
+
+
+    public Flight (String code, String destination, int cap)
+    {
         fltCode = code;
         this.destination = destination;
         capacity = cap;
     }
-    
-   public String getCode() 
+
+   public String getCode()
     {
         return fltCode;
     }
-    
-    public String getDestination() 
+
+    public String getDestination()
     {
         return destination;
     }
-    
+
     public boolean hasPlaces()
     {
         return passengers.size() < capacity;
     }
-    
+
     public void addPassenger(Passenger pp)
     {
         passengers.add(pp);
     }
-    
+
     public void removePassenger(Passenger pp)
     {
         passengers.remove(pp);
     }
-   
+
     public boolean isPassenger(Passenger pp)
     {
         return passengers.contains(pp);
