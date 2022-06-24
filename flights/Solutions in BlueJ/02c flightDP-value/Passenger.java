@@ -1,23 +1,23 @@
 import java.util.*;
 
-public class Passenger 
+public class Passenger
 {
     private String name;
     private boolean assistance;
 
-    
-    public Passenger (String name, boolean ass) 
+
+    public Passenger (String name, boolean ass)
     {   this.name = name;
         assistance = ass;
     }
-    
-    public boolean needsAssist () 
+
+    public boolean needsAssist ()
     {   return assistance; }
-    
-    
-    public String getName () 
+
+
+    public String getName ()
     {   return name;}
-    
+
     public String toString()
     {
         return "Passenger:  " + name + "  Assistance:  " + assistance;
