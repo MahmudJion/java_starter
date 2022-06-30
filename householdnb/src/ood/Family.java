@@ -1,13 +1,6 @@
 package ood;
 
 import java.util.ArrayList;
-
-/**
- * Write a description of class Family here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Family
 {
     private String mother;
@@ -15,11 +8,11 @@ public class Family
     private Person[] children ;     // declare an array
     private int childCount;
     private ArrayList<Dog> myDogs;  // declare ArrayList
-    // declare a collection of children - what type of object will be stored ??? 
-   
-    
-    
-   
+    // declare a collection of children - what type of object will be stored ???
+
+
+
+
     public Family(String ma, String pa)
     {
         mother = ma;
@@ -28,9 +21,9 @@ public class Family
         // create the collection of children
         children = new Person[5]; // create fixed size array
     }
-    
+
     // using arrays
-    
+
     //Complete the code
     /* add Person object**/
     public void addChild(Person ch)
@@ -43,20 +36,20 @@ public class Family
     public void showAllChildren()
     {
         for(int index=0; index<childCount; index++)
-        { 
+        {
             Person xx = children[index];
             System.out.println(xx.getAsString());
             // OR
             // System.out.println(children[index].getAsString());
         }
     }
-    
+
     // accumulate all elements and return as a String
     public String getAllChildren()
     {
         String s = "";
         for(int index=0; index<childCount; index++)
-        { 
+        {
             Person xx = children[index];
             s = s + xx.getAsString() +"\n";
             //OR  in one line of code ??
@@ -69,17 +62,17 @@ public class Family
      */
     public int noOfChildren()
     {
-        return childCount; 
+        return childCount;
     }
-    
-    
+
+
     public void removeAChild(int position)
     {
         //????
     }
-    
+
     //Searching
-    
+
     public void showAChild(int position) // print to Terminal window
     {
       // show one child - you need to know its position in
@@ -88,9 +81,9 @@ public class Family
            Person ppp  = children[position];
            System.out.println(ppp.getAsString());
         }
-    }  
-    
-    
+    }
+
+
     public Person getAChild(int position)
     {
        // get a child given its position in the list. Make sure to check the parameter
@@ -111,29 +104,29 @@ public class Family
         children[childCount] = temp; // add child object
         childCount++;
     }
-    
+
     // remove a child by name ? find it first and then ??
     public void removeAChild(String name )
     {
         //????
     }
-    
-    
+
+
     // using Arraylist
-    
+
     /* add dog object**/
-    public void addDog(Dog gg) 
+    public void addDog(Dog gg)
     {
         myDogs.add(gg);
     }
-        
+
     /** returns the number of dogs in the collection
      */
     public int noOfDogs()
     {
         return myDogs.size();
     }
-    
+
     /** remove a dog at the position indicated by the parameter
      */
     public void removeDog(int position)
@@ -141,9 +134,9 @@ public class Family
        if (position >=0 && position<myDogs.size()) // this makes sure that position is in the right range
        {
            myDogs.remove(position);
-       } 
+       }
     }
-   
+
     /** show in the Terminal Window, the dog at the position indicated by the parameter
      * from its collection
      */
@@ -155,9 +148,9 @@ public class Family
            ddd = myDogs.get(position);
            System.out.println(ddd.getAsString());
         }
-    }  
-    
-    /** returns a String representation of the dog in the position given 
+    }
+
+    /** returns a String representation of the dog in the position given
      * by the parameter
      */
     public Dog getADog(int position)
@@ -169,7 +162,7 @@ public class Family
            return ddd;
         }
         return null;
-    } 
+    }
 
     /** add dog alternative **/
     public void addDog(String nnn, String bbb)
@@ -178,24 +171,24 @@ public class Family
         temp = new Dog(nnn,bbb); //create dog object from parameter data
         myDogs.add(temp); // add dog object
     }
-    
-    
+
+
    //**************using loops **************
     public void showAllDogs()
     {
-        int index = 0;       
-        while (index < myDogs.size()) 
-        {    
-            Dog temp = myDogs.get(index); 
-            // process dog in a relevant way          
+        int index = 0;
+        while (index < myDogs.size())
+        {
+            Dog temp = myDogs.get(index);
+            // process dog in a relevant way
             System.out.println(temp.getAsString());
             index++;
         }
-    } 
-    
-   // write a method: "getAllDogs()"
- 
-} 
+    }
 
-        
+   // write a method: "getAllDogs()"
+
+}
+
+
 
