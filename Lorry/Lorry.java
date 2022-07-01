@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class Lorry here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class Lorry
 {
    // declare the components of your picture
