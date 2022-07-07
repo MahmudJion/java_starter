@@ -17,9 +17,12 @@ public class JournalReaderGUI extends javax.swing.JFrame implements Observer{
     /**
      * Creates new form JournalReaderGUI
      */
-    
+
     DiaryEntryCollection diary;
     TextEntryGUI textEntryWindow;
+    /**
+     *
+     */
     public JournalReaderGUI() {
         initComponents();
         diary = new DiaryEntryCollection();
@@ -169,7 +172,7 @@ public class JournalReaderGUI extends javax.swing.JFrame implements Observer{
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -217,6 +220,6 @@ public class JournalReaderGUI extends javax.swing.JFrame implements Observer{
         DiaryEntry diaryPage = diary.getCurrentDiaryEntry();
         this.lblTitle1.setText(diaryPage.getTitle());
         this.lblCount.setText("" + (diary.getCurrentEntryIndex()+1) + " of " + diary.getSize());
-        this.txEntryText.setText(diaryPage.getBodyText());  
+        this.txEntryText.setText(diaryPage.getBodyText());
     }
 }
