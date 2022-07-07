@@ -1,29 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.mavenjournal;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- *
- * @author Stiv
- */
 public class DiaryEntry {
     /**
      * @return the title
      */
-    
-    
+
+
     SimpleDateFormat formatter;
-    
+
     public String getTitle() {
         return title;
     }
-    
+
     public DiaryEntry(String title, String bodyText)
     {
         formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
@@ -66,13 +57,13 @@ public class DiaryEntry {
     public void setBodyText(String bodyText) {
         this.bodyText = bodyText;
     }
-    
+
     public String getDateAsString()
     {
         return formatter.format(date);
-        
+
     }
-    
+
     private String title;
     private Date date;
     private String bodyText;
