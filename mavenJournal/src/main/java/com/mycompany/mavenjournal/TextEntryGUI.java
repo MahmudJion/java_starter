@@ -1,20 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.mavenjournal;
 
-/**
- *
- * @author Stiv
- */
 public class TextEntryGUI extends javax.swing.JFrame {
 
     /**
      * Creates new form TextEntryGUI
      */
-    
+
     DiaryEntryCollection diary;
     public TextEntryGUI(DiaryEntryCollection d) {
         initComponents();
@@ -111,7 +102,7 @@ public class TextEntryGUI extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnAddEntryActionPerformed
 
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddEntry;
