@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
-* edited by steve
- */
 package ui;
 
 import java.util.Observable;
@@ -12,11 +6,6 @@ import java.util.Observer;
 import data.TemperatureReadings;
 import data.temperatureData;
 
-
-/**
- *
- * @author Stiv
- */
 public class TempUI extends javax.swing.JFrame implements Observer {
 
     /**
