@@ -1,13 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
-This is my project now
-And Steve is a contributor
-Ive solved the illegal numbers problem
-
-I have closed the kanban board
- */
 package data;
 
 import java.time.LocalDateTime;
@@ -15,10 +5,6 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.Observable;
 
-/**
- *
- * @author Stiv
- */
 public class temperatureData extends Observable {
 
     /**
@@ -91,7 +77,7 @@ public class temperatureData extends Observable {
 
         setChanged();
         this.notifyObservers(this.advice);
-        //System.out.println(toString());
+        System.out.println(toString());
     }
 
     public boolean equals(temperatureData oTd)
@@ -116,12 +102,10 @@ public class temperatureData extends Observable {
         return false;
     }
 
-
-
- private float temperature;
- private boolean isCelsius;
- private String advice;
- private LocalDateTime dt;
+    private float temperature;
+    private boolean isCelsius;
+    private String advice;
+    private LocalDateTime dt;
 
 
 }
