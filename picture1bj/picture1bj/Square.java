@@ -1,12 +1,4 @@
 import java.awt.*;
-
-/**
- * A square that can be manipulated and that draws itself on a canvas.
- * 
- * @author  Michael Kolling and David J. Barnes
- * @version 2008.03.30
- */
-
 public class Square
 {
     private int size;
@@ -35,7 +27,7 @@ public class Square
         isVisible = true;
         draw();
     }
-    
+
     /**
      * Make this square invisible. If it was already invisible, do nothing.
      */
@@ -44,7 +36,7 @@ public class Square
         erase();
         isVisible = false;
     }
-    
+
     /**
      * Move the square a few pixels to the right.
      */
@@ -104,7 +96,7 @@ public class Square
     {
         return xPosition;
     }
-    
+
     /**
      * Returns the y position
      */
@@ -112,7 +104,7 @@ public class Square
     {
         return yPosition;
     }
-    
+
     /**
      * Returns the x position
      */
@@ -127,12 +119,12 @@ public class Square
     {
         int delta;
 
-        if(distance < 0) 
+        if(distance < 0)
         {
             delta = -1;
             distance = -distance;
         }
-        else 
+        else
         {
             delta = 1;
         }
@@ -151,12 +143,12 @@ public class Square
     {
         int delta;
 
-        if(distance < 0) 
+        if(distance < 0)
         {
             delta = -1;
             distance = -distance;
         }
-        else 
+        else
         {
             delta = 1;
         }
