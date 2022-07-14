@@ -1,13 +1,5 @@
 import java.awt.*;
 import java.awt.geom.*;
-
-/**
- * A circle that can be manipulated and that draws itself on a canvas.
- * 
- * @author  Michael Kolling and David J. Barnes
- * @version 2008.03.30 amended by A. Marczyk 2015.09.20
- */
-
 public class Circle
 {
     private int diameter;
@@ -15,7 +7,7 @@ public class Circle
     private int yPosition;
     private String color;
     private boolean isVisible;
-    
+
     /**
      * Create a new circle at default position with default color.
      */
@@ -36,7 +28,7 @@ public class Circle
         isVisible = true;
         draw();
     }
-    
+
     /**
      * Make this circle invisible. If it was already invisible, do nothing.
      */
@@ -45,7 +37,7 @@ public class Circle
         erase();
         isVisible = false;
     }
-    
+
     /**
      * Returns the size of the diameter
      */
@@ -53,7 +45,7 @@ public class Circle
     {
         return diameter;
     }
-    
+
     /**
      * Returns the x position
      */
@@ -61,7 +53,7 @@ public class Circle
     {
         return xPosition;
     }
-    
+
     /**
      * Returns the y position
      */
@@ -69,7 +61,7 @@ public class Circle
     {
         return yPosition;
     }
-    
+
     /**
      * Returns the x position
      */
@@ -77,8 +69,8 @@ public class Circle
     {
         return color;
     }
-    
-    
+
+
     /**
      * Move the circle a few pixels to the right.
      */
@@ -138,12 +130,12 @@ public class Circle
     {
         int delta;
 
-        if(distance < 0) 
+        if(distance < 0)
         {
             delta = -1;
             distance = -distance;
         }
-        else 
+        else
         {
             delta = 1;
         }
@@ -162,12 +154,12 @@ public class Circle
     {
         int delta;
 
-        if(distance < 0) 
+        if(distance < 0)
         {
             delta = -1;
             distance = -distance;
         }
-        else 
+        else
         {
             delta = 1;
         }
@@ -206,7 +198,7 @@ public class Circle
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
-            canvas.draw(this, color, new Ellipse2D.Double(xPosition, yPosition, 
+            canvas.draw(this, color, new Ellipse2D.Double(xPosition, yPosition,
                                                           diameter, diameter));
             canvas.wait(10);
         }
