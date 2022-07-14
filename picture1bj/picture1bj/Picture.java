@@ -1,14 +1,3 @@
-/**
- * This class represents a simple picture. You can draw the picture using
- * the draw method. But wait, there's more: being an electronic picture, it
- * can be changed. You can set it to black-and-white display and back to
- * colors (only after it's been drawn, of course).
- *
- * This class was written as an early example for teaching Java with BlueJ.
- * 
- * @author  Michael Kolling and David J. Barnes
- * @version 2008.03.30 amended A.A.Marczyk 2011.06.10
- */
 public class Picture
 {
     // declare the components of your picture
@@ -25,7 +14,7 @@ public class Picture
     {
         wall = new Square();
         window = new Square();
-        roof = new Triangle(); 
+        roof = new Triangle();
         sun = new Circle();
     }
 
@@ -33,11 +22,11 @@ public class Picture
      * Draw this picture.
      */
     public void draw()
-    {        
+    {
         wall.moveVertical(80);
         wall.changeSize(100);
-        wall.makeVisible(); 
-        
+        wall.makeVisible();
+
         window.changeColor("black");
         window.moveHorizontal(20);
         window.moveVertical(100);
