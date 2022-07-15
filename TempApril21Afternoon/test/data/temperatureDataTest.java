@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package data;
 
 import org.junit.After;
@@ -17,22 +12,22 @@ import static org.junit.Assert.*;
  * @author comqsjb
  */
 public class temperatureDataTest {
-    
+
     public temperatureDataTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -49,7 +44,7 @@ public class temperatureDataTest {
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
     }
-    
+
     @Test
     public void testGetTemperatureThirtySix() {
         System.out.println("getTemperature");
@@ -70,7 +65,7 @@ public class temperatureDataTest {
         float temperature = 0.0F;
         temperatureData instance = new temperatureData();
         instance.setTemperature(temperature);
-        
+
     }
 
     /**
@@ -84,7 +79,7 @@ public class temperatureDataTest {
         boolean result = instance.isIsCelsius();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        
+
     }
 
     /**
@@ -98,7 +93,7 @@ public class temperatureDataTest {
         instance.setIsCelsius(isCelsius);
         assertEquals(isCelsius,instance.isIsCelsius());
         // TODO review the generated test code and remove the default call to fail.
-        
+
     }
 
     /**
@@ -113,7 +108,7 @@ public class temperatureDataTest {
         instance.setTempAndUnits(temperatureStr, isCelsius);
         assertEquals(38.0F,instance.getTemperature(),0.0);
     }
-    
+
     @Test
     public void testSetTempAndUnitsNegative() {
         float expResult, result;
@@ -125,17 +120,17 @@ public class temperatureDataTest {
         instance.setTempAndUnits(temperatureStr, isCelsius);
         result = instance.getTemperature();
         assertEquals(result,expResult,0.0);
-        
-       
+
+
     }
-    
-    
+
+
     @Test
     public void testSetTempAndUnitsIllegal() {
         System.out.println("setTempAndUnits");
         String temperatureStr = "36r";
         boolean isCelsius = true;
-        
+
         temperatureData instance = new temperatureData();
         float expResult = instance.getTemperature();
         instance.setTempAndUnits(temperatureStr, isCelsius);
@@ -146,6 +141,6 @@ public class temperatureDataTest {
     /**
      * Test of setAdvice method, of class temperatureData.
      */
-    
-    
+
+
 }
