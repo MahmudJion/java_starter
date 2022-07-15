@@ -1,12 +1,5 @@
 package Student_bluej;
 
-
-/**
- * Write a description of class RunMe here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class RunMe
 {
     public static void main(String[] abc)
