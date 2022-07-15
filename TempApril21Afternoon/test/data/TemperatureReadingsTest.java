@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package data;
 
 import org.junit.After;
@@ -17,22 +12,22 @@ import static org.junit.Assert.*;
  * @author Stiv
  */
 public class TemperatureReadingsTest {
-    
+
     public TemperatureReadingsTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -48,7 +43,7 @@ public class TemperatureReadingsTest {
         TemperatureReadings instance = new TemperatureReadings();
         instance.addReading(td);
         //assertNotEquals("", instance.toString());
-        assertEquals(1, instance.size());  
+        assertEquals(1, instance.size());
     }
 
     /**
@@ -62,19 +57,19 @@ public class TemperatureReadingsTest {
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        
+
     }
-    
+
     @Test
     public void testNullReadingAdded() {
         //checking that a temperature reading is not added to the list if it is a null object
     }
-    
-    
+
+
     @Test
     public void testSecondReadingAddedDifferentToFirst() {
         //checking if two different readings are added, that the second is different to the first
     }
-    
-    
+
+
 }
