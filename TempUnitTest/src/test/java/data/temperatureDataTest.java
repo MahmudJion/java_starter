@@ -2,10 +2,6 @@ package data;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- *
- * @author victorsteven
- */
 public class temperatureDataTest {
 
     public temperatureDataTest() {
