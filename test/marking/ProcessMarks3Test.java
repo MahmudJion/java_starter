@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package marking;
 
 import org.junit.After;
@@ -11,10 +6,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-/**
- *
- * @author comqaam
- */
+
 public class ProcessMarks3Test {
     ProcessingMarks myUnit;
 
@@ -74,20 +66,20 @@ public class ProcessMarks3Test {
         assertTrue(answer);
     }
 
-//    @Test
-//    public void markprocess3pass() {
-//        int mark = 55;
-//        String result = "Pass";
-//        String actual = myUnit.processMark3(mark);
-//        boolean comparison = actual.equals("Pass");
-//        assertTrue(comparison);
-//    }
-//
-//    @Test
-//    public void markprocess3border() {
-//        int mark = 40;
-//
-//        boolean actual = myUnit.processMark2(mark);
-//        assertTrue(actual);
-//    }
+   @Test
+   public void markprocess3pass() {
+       int mark = 55;
+       String result = "Pass";
+       String actual = myUnit.processMark3(mark);
+       boolean comparison = actual.equals("Pass");
+       assertTrue(comparison);
+   }
+
+   @Test
+   public void markprocess3border() {
+       int mark = 40;
+
+       boolean actual = myUnit.processMark2(mark);
+       assertTrue(actual);
+   }
 }
