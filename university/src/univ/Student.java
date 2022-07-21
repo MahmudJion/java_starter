@@ -1,10 +1,4 @@
 package univ;
-/**
- * The Student class stores information about a student  at the University
- * Students are enrolled on only one course called a "pathway" e.g. "CS2", "CSP4"
- * For simplicity, in this version the pathway is just stored as a String
- *
- */
 
 public class Student
 {
