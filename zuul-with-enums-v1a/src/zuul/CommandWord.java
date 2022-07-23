@@ -1,20 +1,14 @@
 package zuul;
-/**
- * Representations for all the valid command words for the game
- * along with a string in a particular language.
- * 
- * @author Michael Kolling and David J. Barnes
- * @version 2006.03.30
- */
+
 public enum CommandWord
 {
     // A value for each command word along with its
     // corresponding user interface string.
     GO("allez"), QUIT("quittez"), HELP("aidez"), UNKNOWN("que?");
-    
+
     // The command string.
     private String commandString;
-    
+
     /**
      * Initialise with the corresponding command word.
      * @param commandWord The command string.
@@ -23,7 +17,7 @@ public enum CommandWord
     {
         this.commandString = commandString;
     }
-    
+
     /**
      * @return The command word as a string.
      */
