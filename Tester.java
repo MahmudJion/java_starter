@@ -5,16 +5,16 @@ public class Tester {
         Date date = new Date(1,10,2018);
         StockItem bob = new StockItem("Baked Beans 415g", 65.0, 10, date);
         bob.printReport();
-        //System.out.println(bob.toString());
+        System.out.println(bob.toString());
         bob.setPrice(75.0);
-        //System.out.println(bob.toString());
+        System.out.println(bob.toString());
         bob.setSellByDate(01,10,2019);
         bob.printReport();
         bob.doDelivery(10);
-        //System.out.println(bob.toString());
+        System.out.println(bob.toString());
         bob.doSale(8);
 
-        //System.out.println(bob.toString());
+        System.out.println(bob.toString());
         System.out.println(bob.getStockLevel());
         System.out.println(bob.getDescription());
         System.out.println("done");
