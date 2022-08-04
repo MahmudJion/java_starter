@@ -1,5 +1,6 @@
 public class TestList {
-     public static void main(String[] args)
+    
+    public static void main(String[] args)
     {
         StockList stList = new StockList();
 
