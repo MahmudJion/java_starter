@@ -25,7 +25,7 @@ public class StockItem {
         System.out.println("   Item  :  " + this.description);
         System.out.printf("   Price: %.2fp%n", this.price);
         System.out.printf("  Stock level  : %d%n ", this.level);
-        //System.out.println(" Date :" + this.sellByDate.getAsString());
+        System.out.println(" Date :" + this.sellByDate.getAsString());
     }
 
     @Override
